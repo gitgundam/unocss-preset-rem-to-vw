@@ -6,15 +6,20 @@
 npm i -D unocss-preset-rem-to-vw
 ```
 
+//vite.config.ts
+
 ```ts
 import presetUno from "@unocss/preset-uno"
 import presetRemToVw from "unocss-preset-rem-to-vw"
-
-Unocss({
-	presets: [
-		presetUno(),
-		presetRemToVw({
-			/* preset options */
+export default defineConfig({
+	plugins: [
+		Unocss({
+			presets: [
+				presetUno(),
+				presetRemToVw({
+					/* preset options */
+				}),
+			],
 		}),
 	],
 })
