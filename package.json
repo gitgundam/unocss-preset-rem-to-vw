@@ -1,0 +1,40 @@
+{
+  "name": "unocss-preset-rem-to-vw",
+  "version": "1.0.0",
+  "description": "unocss-preset-rem-to-vw",
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitgundam/unocss-preset-rem-to-vw.git"
+  },
+  "author": "gitgundam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitgundam/unocss-preset-rem-to-vw/issues"
+  },
+  "homepage": "https://github.com/gitgundam/unocss-preset-rem-to-vw#readme",
+  "keywords": [
+    "unocss",
+    "unocss-preset"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@unocss/core": "^0.48.0",
+    "unbuild": "^1.0.2"
+  }
+}
