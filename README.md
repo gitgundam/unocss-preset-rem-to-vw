@@ -17,7 +17,7 @@ export default defineConfig({
     Unocss({
       presets: [
         presetUno(),
-        presetRemToVw()
+        presetRemToVw(/* preset options */ )
       ],
 
     }),
