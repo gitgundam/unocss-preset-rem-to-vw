@@ -17,7 +17,6 @@ export interface PxToVwOptions {
 export default function remToVwPreset(options: PxToVwOptions = {}): Preset {
 	const { baseFontSize = 16, baseWidth = 375, unitPrecision = 4 } = options
 
-	// 750px = 100vw  ; 1px = 100vw / 750px = 0.13vw
 	const pxToVw = (px: number) => ((100 / baseWidth) * px).toFixed(unitPrecision)
 
 	return {
