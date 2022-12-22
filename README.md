@@ -12,16 +12,16 @@ npm i -D unocss-preset-rem-to-vw
 import presetUno from "@unocss/preset-uno"
 import presetRemToVw from "unocss-preset-rem-to-vw"
 export default defineConfig({
-	plugins: [
-		Unocss({
-			presets: [
-				presetUno(),
-				presetRemToVw({
-					/* preset options */
-				}),
-			],
-		}),
-	],
+  plugins: [
+    react(),
+    Unocss({
+      presets: [
+        presetUno(),
+        presetRemToVw()
+      ],
+
+    }),
+  ],
 })
 ```
 
