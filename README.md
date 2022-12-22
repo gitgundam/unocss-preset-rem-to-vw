@@ -11,8 +11,23 @@ import presetUno from "@unocss/preset-uno"
 import presetRemToVw from "unocss-preset-rem-to-vw"
 
 Unocss({
-	presets: [presetUno(), presetRemToVw()],
+	presets: [
+		presetUno(),
+		presetRemToVw({
+			/* preset options */
+		}),
+	],
 })
+```
+
+### preset options
+
+```ts
+interface PxToVwOptions {
+	baseFontSize?: number // defalut 16
+	baseWidth?: number // defalut 375
+	unitPrecision?: number // defalut 4
+}
 ```
 
 ## Usage
